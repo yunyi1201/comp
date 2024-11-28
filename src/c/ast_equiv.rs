@@ -525,10 +525,11 @@ impl IsEquiv for AlignOf {
 
 pub fn assert_ast_equiv(lhs: &TranslationUnit, rhs: &TranslationUnit) {
     if !lhs.is_equiv(rhs) {
-        panic!(
-            r#"assertion failed: `(left.is_equiv(right))`
-             left: `{lhs:?}`,
-            right: `{rhs:?}`"#
-        )
+        // panic!(
+        //     r#"assertion failed: `(left.is_equiv(right))`
+        //      left: `{lhs:?}`,
+        //     right: `{rhs:?}`"#
+        // )
+        panic!("failed")
     }
 }

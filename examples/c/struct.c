@@ -1,7 +1,7 @@
 typedef struct {
   char a;
   struct {
-    int b[4][5];
+    int b[4] [5];
   };
   double c;
 } Temp;
